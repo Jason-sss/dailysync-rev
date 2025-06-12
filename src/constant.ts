@@ -9,6 +9,8 @@ export const AESKEY_DEFAULT = 'LSKDAJALSD';
 /**
  * GARMIN ACCOUNT
  */
+//需要先从.env文件中获取全局变量
+require('dotenv').config();
 // 佳明中国区账号及密码
 export const GARMIN_USERNAME_DEFAULT = process.env.GARMIN_USERNAME_DEFAULT || '';
 export const GARMIN_PASSWORD_DEFAULT = process.env.GARMIN_PASSWORD_DEFAULT || '';
